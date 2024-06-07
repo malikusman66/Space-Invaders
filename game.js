@@ -309,6 +309,7 @@ function restartGame(e) {
 
     if (mouseX > canvas.width / 2 - 50 && mouseX < canvas.width / 2 + 50 &&
         mouseY > canvas.height / 2 + 50 && mouseY < canvas.height / 2 + 80) {
+        
         // Reset game variables
         score = 0;
         lives = 3;
@@ -322,6 +323,7 @@ function restartGame(e) {
         alienSpeed = 1;
         alienDirection = 1;
 
+        // Reinitialize aliens and bases
         initAliens();
         initBases();
 
@@ -332,6 +334,7 @@ function restartGame(e) {
         draw();
     }
 }
+
 
 initAliens();
 initBases();
